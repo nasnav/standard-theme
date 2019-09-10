@@ -1,0 +1,180 @@
+@import '../modules/colors';
+@import '../modules/breakpoints';
+@import '../modules/mixins';
+
+/* ==============================
+Section
+================================= */
+.view360 {
+  background-color: $bg-lighter-grey;
+  position: relative;
+  padding: 2.5rem 0;
+}
+
+/* badge */
+.view360__badge {
+  display: none;
+
+  @media screen and (min-width: $break-s) {
+    display: block;
+    opacity: .2;
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    width: 7rem;
+  }
+  @media screen and (min-width: $break-m) {
+    width: 10rem;
+  }
+  @media screen and (min-width: $break-l) {
+    width: 12rem;
+  }
+  @media screen and (min-width: $break-xl) {
+    width: 14rem;
+  }
+}
+
+/* panorama */
+.panorama__image {
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  max-height: 35rem;
+  border-radius: .25rem;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+/* panorama controls */
+.panorama__control {
+  padding: 1.38rem;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8);
+  transition-property: border-color, background-color;
+  transition-duration: .25s;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+  &:hover,
+  &:focus {
+    border-color: rgba(255, 255, 255, .6);
+    background-color: rgba(0, 0, 0, .9);
+  }
+
+  @media screen and (min-width: $break-m) {
+    padding: 1.7rem;
+  }
+}
+
+/* settings */
+.panorama__settingsControl {
+  left: 2rem;
+  top: 1rem;
+}
+
+/* cart */
+.panorama__cartControl {
+  right: 2rem;
+  top: 1rem;
+}
+
+/* share */
+.panorama__shareControl {
+  right: 2rem;
+  bottom: 1rem;  
+}
+
+/* zoom in */
+.panorama__zoomInControl {
+  left: 2rem;
+  bottom: 1rem;  
+}
+
+/* zoom out */
+.panorama__zoomOutControl {
+  left: 5.5rem;
+  bottom: 1rem;  
+
+  @media screen and (min-width: $break-m) {
+    left: 6.5rem;
+  }
+}
+
+/* full screen */
+.panorama__fullScreenControl {
+  left: 9rem;
+  bottom: 1rem;  
+
+  @media screen and (min-width: $break-m) {
+    left: 11rem;
+  }
+}
+
+/* shop details --- */
+.shopDetails {
+  display: none;
+
+  @media screen and (min-width: $break-m) {
+    display: block;
+    color: #fff;
+    width: 20rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .8);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: .4rem;
+    position: absolute;
+    left: 19rem;
+    top: 3rem;
+  }
+
+  @media screen and (min-width: $break-l) {
+    left: 2rem;
+    top: 6rem;  
+  }
+}
+
+/* location */
+.shopDetails__location {
+  margin-bottom: 0;
+  font-size: .9rem;
+  color: $green;
+}
+
+/* shop name */
+.shopDetails__name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: .7rem 0 .2rem;
+}
+
+/* tools heading */
+.shopDetails__toolsTitle {
+  font-size: 1.3rem;
+}
+
+/* Shop tools --- */
+.shopToolList {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopToolList__tool {
+  padding: 1.5rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: .25s;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+  &:hover,
+  &:focus {
+    background-color: #000;
+  }
+}

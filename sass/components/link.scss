@@ -1,0 +1,103 @@
+@import '../modules/colors';
+@import '../modules/breakpoints';
+
+.link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* borders --- */
+/* direction */
+.link_border_bottom {
+  border-bottom: 1px solid;
+}
+.link_border_all {
+  border: 1px solid;
+}
+/* border color */
+.link_borderColor_blue {
+  border-color: $blue;
+}
+
+/* colors */
+.link_color_inherited {
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+.link_color_green {
+  color: $dark-green;
+
+  &:hover,
+  &:focus {
+    color: $darker-green;
+  }
+}
+.link_color_grey {
+  color: $dark-grey;
+
+  &:hover,
+  &:focus {
+    color: $darker-grey;
+  }
+}
+
+/* Navbar links --- */
+.nav-link {
+  color: $nav-link-grey!important;
+  position: relative;
+  transition: color .2s, border-color .2s;
+  font-weight: 500;
+  padding-left: 1rem!important;
+  padding-right: 1rem!important;
+  border-bottom: 2px solid rgba($color: $nav-link-grey, $alpha: .1);
+
+  @media screen and (min-width: $break-l) {
+    border: none;
+  }
+
+  @media screen and (min-width: $break-xl) {
+    margin-left: .8rem!important;
+    margin-right: .8rem!important;
+  }
+
+  &::before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: -.7rem;
+    left: 0;
+    height: .13rem;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color .2s;
+    pointer-events: none;
+
+    @media screen and (min-width: $break-l) {
+      display: block;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $blue!important;
+    border-color: $blue;
+
+    &::before {
+      background-color: $blue;
+    }
+  }
+}
+
+/* navbar icon links --- */
+.navbar__iconLink {
+  &:hover,
+  &:focus {
+    .navbar__icon {
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import '../modules/colors';
+
+/* Navbar icons ----- */
+.navbar__icon {
+  color: $nav-icon-grey;
+  padding: 1rem .75rem;
+  transition: .2s color;
+}

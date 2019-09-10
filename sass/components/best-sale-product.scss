@@ -1,0 +1,32 @@
+@import '../modules/colors';
+@import '../modules/breakpoints';
+
+.bestProduct {
+  background-color: $bg-lighter-grey;
+}
+
+/* columns */
+.bestProduct__imgCol {
+  @media screen and (min-width: $break-l) {
+    order: 1;
+  }
+}
+
+/* badge */
+.bestProduct__badge {
+  display: inline-block;
+  font-size: .8rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: .1rem .5rem;
+  border-radius: .1rem;
+  background-color: $orange;
+}
+
+/* price */
+.bestProduct__price {
+  font-size: 1.9rem;
+  line-height: 1;
+  font-weight: 500;
+  color: $blue;
+}

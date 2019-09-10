@@ -1,0 +1,11 @@
+@import './modules/colors';
+@import './modules/breakpoints';
+
+html {
+  overflow-x: hidden;
+  color: $body-text;
+
+  @media screen and (max-width: $break-s) {
+    font-size: .9rem;
+  }
+}

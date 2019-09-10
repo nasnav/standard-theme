@@ -1,0 +1,78 @@
+@import '../modules/colors';
+
+.contact {
+  background-color: $bg-lighter-grey;
+}
+
+/* paragraph */
+.contact__paragraph {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* form ---- */
+/* input */
+.contact__inputGroup {
+  box-shadow: 0 0 5px rgba($color: #000000, $alpha: .15);
+}
+
+.contact__input {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* subscribe button */
+.contactForm__btn {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.5rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+/* social list */
+.socialItem__link {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  border-radius: .15rem;
+  transition: background-color .15s;
+
+  .facebook & {
+    background-color: $facebook;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: rgba($color: $facebook, $alpha: .8);
+    }
+  }
+
+  .twitter & {
+    background-color: $twitter;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: rgba($color: $twitter, $alpha: .8);
+    }
+  }
+
+  .vimeo & {
+    background-color: $vimeo;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: rgba($color: $vimeo, $alpha: .8);
+    }
+  }
+}
+
+/* secondary navigation ----- */
+/* link */
+.secondaryNav__link {
+  color: inherit;
+}

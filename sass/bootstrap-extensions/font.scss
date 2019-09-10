@@ -1,0 +1,36 @@
+/* =================================
+Mixins
+==================================== */
+/* decoration */
+.text-underline {
+  text-decoration: underline;
+}
+
+/* titles */
+.title-1 {
+  font-size: 1.75rem;
+}
+.title-2 {
+  font-size: 1.47rem;
+}
+.title-3 {
+  font-size: 1.17rem;
+}
+.title-4 {
+  font-size: 1.1rem;
+}
+
+/* font weight */
+.font-weight-md {
+  font-weight: 500;
+}
+
+/* letter spacing */
+.letters-spaced-sm {
+  letter-spacing: .1rem;
+}
+
+/* max width */
+.shortened {
+  max-width: 37rem;
+}

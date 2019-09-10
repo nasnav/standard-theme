@@ -1,0 +1,17 @@
+@import '../modules/colors';
+
+.navbarIconLink__badge {
+  color: $blue;
+  background: #fff;
+  font-size: .9rem; 
+  position: absolute; 
+  top: 0;
+  right: 0;
+  width: 1.2rem; 
+  height: 1.2rem; 
+  border-radius: 50%; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-weight: 500;
+}

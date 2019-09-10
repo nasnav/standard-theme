@@ -1,0 +1,20 @@
+@import '../modules/colors';
+@import '../modules/breakpoints';
+
+.about {
+  background-color: $bg-lighter-grey;
+  overflow: hidden;
+}
+
+/* image */
+.about__imgContainer {
+  @media screen and (min-width: $break-m) {
+    max-height: 7rem;
+    display: flex;
+    align-items: center; 
+  }
+}
+
+.about__img {
+  max-width: 20rem;
+}

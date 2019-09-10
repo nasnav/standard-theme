@@ -1,0 +1,61 @@
+@import '../modules/colors';
+
+.feature {
+  &:nth-child(1) {
+    .feature__iconContainer {
+      background-color: $orange;
+      &::after {
+        background-color: $orange;
+      } 
+    }
+  }
+  &:nth-child(2) {
+    .feature__iconContainer {
+      background-color: $blue;
+      &::after {
+        background-color: $blue;
+      } 
+    }
+  }
+  &:nth-child(3) {
+    .feature__iconContainer {
+      background-color: $green;
+      &::after {
+        background-color: $green;
+      } 
+    }
+  }
+}
+
+/* icon */
+.feature__iconContainer {
+  position: relative;
+  display: flex;
+  padding: 2rem 1.5rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    right: -1.8rem;
+    width: 1.8rem;
+    height: 130%;
+    transform: rotate(15deg);
+    transform-origin: top left;
+  }
+}
+
+.feature__icon {
+  position: relative;
+  right: -.3rem;
+}
+
+/* text */
+.feature__text {
+  padding: .5rem .5rem .5rem 2rem;
+  flex-grow: 1;
+  background-color: $bg-light-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

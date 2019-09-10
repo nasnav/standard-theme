@@ -1,0 +1,8 @@
+@import '../modules/breakpoints';
+
+/* image */
+.secondaryDesc1__imgContainer {
+  @media screen and (min-width: $break-m) {
+    order: 1;
+  }
+}

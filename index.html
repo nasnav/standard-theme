@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="index.css">
+  <title>MicroSoft | Home</title>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <!-- top level heading -->
+    <h1 class="sr-only">MicroSoft</h1>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <h2 class="sr-only">Navigation bar</h2>
+      <div class="container">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="MicroSoft logo" width="135">
+        </a>
+
+        <!-- toggler and collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse">
+          <ul class="navbar-nav mx-auto my-4 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mac</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">iPhone</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">iPad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Enterprise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+          </ul>
+
+          <!-- navbar icons -->
+          <span class="navbar-text d-flex">
+            <a href="#" class="navbar__iconLink position-relative">
+              <i class="navbar__icon fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              <span class="navbarIconLink__badge">2</span>
+            </a>
+            <a href="#" class="navbar__iconLink">
+                <i class="navbar__icon fas fa-search fa-lg" aria-hidden="true"></i>
+              </a>
+            <a href="#" class="navbar__iconLink">
+              <i class="navbar__icon fas fa-user fa-lg" aria-hidden="true"></i>
+            </a>
+          </span> <!-- navbar icons -->
+        </div> <!-- collapse -->
+      </div><!-- container -->
+    </nav>
+
+    <!-- welcome & branches menu -->
+    <div class="intro inner-top-shadow">
+      <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
+        <p class="mb-lg-0">
+          <b>Welcome to MicroSoft</b>, <span class="text-dark-grey">now you can shop by the branch closest to you.</span>
+        </p>
+
+        <select class="custom-select align-self-end text-dark-grey w-auto">
+          <option selected>Select a branch</option>
+          <option>Branch 1</option>
+          <option>Branch 2</option>
+          <option>All branches</option>
+        </select>
+      </div><!-- container -->
+    </div><!-- intro -->
+  </header>
+
+  <!-- best sale product -->
+  <article class="bestProduct py-5 inner-top-shadow">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="bestProduct__imgCol col-lg-6 mb-5 mb-lg-0">
+          <img class="img-fluid" src="img/best-product.png" alt="Best sale laptop">
+        </div><!-- col (product image) -->
+
+        <div class="col-lg-5">
+          <span class="bestProduct__badge">best sale</span>
+          <h2 class="bestProduct__name title-1 my-2">Surface Pro 6 - HD high quality</h2>
+          <span class="bestProduct__price">$5620.99</span>
+          <p class="bestProduct__description mt-2 mb-4 text-darker-grey">
+            Ultra-light and versatile. Get productive your way with new Surface Pro 6--now faster than ever with the latest 8th Generation Intel&reg;&trade; processor and the full Windows 10 Home experience.
+          </p>
+          <button class="btn text-white bg-blue mr-4">
+            <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+            Add to cart
+          </button>
+          <a class="link link_border_bottom link_color_green" href="#">Read more</a>
+        </div><!-- col (product details) --> 
+      </div><!-- row -->
+    </div><!-- container -->
+  </article><!-- best sale product --->
+
+  <!-- categories section -->
+  <section class="categorySection pt-5 pb-3 inner-top-shadow">
+    <div class="container">
+      <header class="categorySection__header row justify-content-between align-items-center mb-5">
+        <div class="col col-auto">
+          <h2 class="title-2 mb-1">MicroSoft Categories</h2>
+          <p class="font-weight-md text-dark-grey mb-0">Learn about all categories</p>
+        </div><!-- heading -->
+
+        <div class="col col-auto d-flex justify-content-end">
+          <a class="link link_color_inherited link_border_all link_borderColor_blue px-4 py-2 rounded" href="pages/categories.html">View All</a>
+        </div>
+      </header><!-- row -->
+
+      <div id="categoryCarousel" class="carousel slide position-relative" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <ul class="list row categoryGrid">
+              <li class="col-sm-6 col-xl-3"><!-- col -->
+                <div class="category category-1 surfaceLaptopCategory bg-orange overflow-hidden">
+                  <div class="category__text">
+                    <h3 class="title-2 text-uppercase font-weight-normal text-white">Surface Laptop</h3>
+                    <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+                  </div>
+                  <div class="category__imageContainer">
+                    <img class="category__image" src="img/surface-laptop.png" alt="Microsoft surface laptop">
+                  </div>
+                </div><!-- category 1 -->
+              </li><!-- col -->
+      
+              <li class="col-sm-6 col-xl-4"><!-- col -->
+                <div class="category category-2 mobileCategory bg-green overflow-hidden">
+                  <div class="category__text">
+                    <h3 class="title-2 text-uppercase font-weight-normal text-white">Microsoft Mobiles</h3>
+                    <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+                  </div>
+                  <div class="category__imageContainer">
+                    <img class="category__image" src="img/mobile.png" alt="MicroSoft mobile">
+                  </div>
+                </div><!-- category 2 -->
+              </li><!-- col -->
+      
+              <li class="col-sm-6 col-xl-5"><!-- col -->
+                <div class="category category-3 tabletCategory bg-blue overflow-hidden">
+                  <div class="category__text">
+                    <h3 class="title-2 text-uppercase font-weight-normal text-white">Microsoft Tablets</h3>
+                    <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+                  </div>
+                  <div class="category__imageContainer">
+                    <img class="category__image" src="img/tablet.png" alt="Microsoft tablet">
+                  </div>
+                </div><!-- category 3 -->
+              </li><!-- col -->
+      
+              <li class="col-sm-6 col-xl-4 categoryContainer"><!-- col -->
+                <div class="category category-4 mouseCategory bg-yellow overflow-hidden">
+                  <div class="category__text">
+                    <h3 class="title-2 text-uppercase font-weight-normal text-white">Surface Mouse</h3>
+                    <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+                  </div>
+                  <div class="category__imageContainer">
+                    <img class="category__image" src="img/mouse.png" alt="MicroSoft mouse">
+                  </div>
+                </div><!-- category 4 -->
+              </li><!-- col -->
+            </ul><!-- row -->
+          </div>
+          <div class="carousel-item">
+            <ul class="list row categoryGrid">
+              <li class="col-sm-6 col-xl-3"><!-- col -->
+                <div class="category category-1 surfaceLaptopCategory bg-orange overflow-hidden">
+                  <div class="category__text">
+                    <h3 class="title-2 text-uppercase font-weight-normal text-white">Surface Laptop</h3>
+                    <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+                  </div>
+                  <div class="category__imageContainer">
+                    <img class="category__image" src="img/surface-laptop.png" alt="Microsoft surface laptop">
+                  </div>
+                </div><!-- category 1 -->
+              </li><!-- col -->
+      
+              <li class="col-sm-6 col-xl-4"><!-- col -->
+                <div class="category category-2 mobileCategory bg-green overflow-hidden">
+                  <div class="category__text">
+                    <h3 class="title-2 text-uppercase font-weight-normal text-white">Microsoft Mobiles</h3>
+                    <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+                  </div>
+                  <div class="category__imageContainer">
+                    <img class="category__image" src="img/mobile.png" alt="MicroSoft mobile">
+                  </div>
+                </div><!-- category 2 -->
+              </li><!-- col -->
+      
+              <li class="col-sm-6 col-xl-5"><!-- col -->
+                <div class="category category-3 tabletCategory bg-blue overflow-hidden">
+                  <div class="category__text">
+                    <h3 class="title-2 text-uppercase font-weight-normal text-white">Microsoft Tablets</h3>
+                    <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+                  </div>
+                  <div class="category__imageContainer">
+                    <img class="category__image" src="img/tablet.png" alt="Microsoft tablet">
+                  </div>
+                </div><!-- category 3 -->
+              </li><!-- col -->
+      
+              <li class="col-sm-6 col-xl-4 categoryContainer"><!-- col -->
+                <div class="category category-4 mouseCategory bg-yellow overflow-hidden">
+                  <div class="category__text">
+                    <h3 class="title-2 text-uppercase font-weight-normal text-white">Surface Mouse</h3>
+                    <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+                  </div>
+                  <div class="category__imageContainer">
+                    <img class="category__image" src="img/mouse.png" alt="MicroSoft mouse">
+                  </div>
+                </div><!-- category 4 -->
+              </li><!-- col -->
+            </ul><!-- row -->
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#categoryCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#categoryCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div><!-- container -->
+  </section><!-- categories section -->
+
+  <!-- features section -->
+  <section class="featureSection pb-5">
+    <h2 class="sr-only">Features</h2>
+    <div class="container">
+      <ul class="list row justify-content-center">
+        <li class="col-sm-9 col-lg-4 feature d-flex overflow-hidden mb-2 mb-lg-0">
+          <div class="feature__iconContainer">
+            <i class="feature__icon fas fa-shipping-fast fa-lg m-auto text-white" aria-hidden="true"></i>
+          </div>
+          <div class="feature__text">
+            <h3 class="title-3 text-uppercase">Free Shipping</h3>
+            <p class="mb-0 text-darker-grey">
+              Where everyday shopping free.
+            </p>
+          </div>
+        </li><!-- col (feature) -->
+        <li class="col-sm-9 col-lg-4 feature d-flex overflow-hidden mb-2 mb-lg-0">
+          <div class="feature__iconContainer">
+            <i class="feature__icon fas fa-dollar-sign fa-lg m-auto text-white" aria-hidden="true"></i>
+          </div>
+          <div class="feature__text">
+            <h3 class="title-3 text-uppercase">Sale Sale!</h3>
+            <p class="mb-0 text-darker-grey">
+              Where everyday shopping free.
+            </p>
+          </div>
+        </li><!-- col (feature) -->
+        <li class="col-sm-9 col-lg-4 feature d-flex overflow-hidden">
+          <div class="feature__iconContainer">
+            <i class="feature__icon fas fa-gift fa-lg m-auto text-white" aria-hidden="true"></i>
+          </div>
+          <div class="feature__text">
+            <h3 class="title-3 text-uppercase">New Offers%</h3>
+            <p class="mb-0 text-darker-grey">
+              Where everyday shopping free.
+            </p>
+          </div>
+        </li><!-- col (feature) -->
+      </ul><!-- row -->
+    </div><!-- container -->
+  </section><!-- features section -->
+
+  <!-- 360 view panorama -->
+  <section class="view360 overflow-hidden inner-top-shadow">
+    <img src="img/360-badge.png" alt="360 view" class="view360__badge">
+    <div class="container text-center mb-5">
+      <hgroup>
+        <h3 class="title-4 font-weight-normal text-uppercase text-dark-grey letters-spaced-sm">MicroSoft new experience</h3>
+        <h2 class="title-1 text-uppercase">360-degree shopping experience</h2>
+      </hgroup>
+    </div>
+    <div class="panorama container position-relative">
+      <img src="img/panorama.png" alt="image for a clothing store" class="panorama__image">
+      <button class="panorama__control panorama__settingsControl" aria-label="change settings">
+        <i aria-hidden="true" class="fas fa-cog fa-lg position-absolute text-white"></i>
+      </button>
+      <button class="panorama__control panorama__cartControl" aria-label="shopping cart">
+        <i aria-hidden="true" class="fas fa-shopping-cart fa-lg position-absolute text-white"></i>
+      </button>
+      <button class="panorama__control panorama__zoomInControl" aria-label="Zoom in">
+        <i aria-hidden="true" class="fas fa-search-plus fa-lg position-absolute text-white"></i>
+      </button>
+      <button class="panorama__control panorama__zoomOutControl" aria-label="Zoom out">
+        <i aria-hidden="true" class="fas fa-search-minus fa-lg position-absolute text-white"></i>
+      </button>
+      <button class="panorama__control panorama__fullScreenControl" aria-label="full screen">
+        <i aria-hidden="true" class="fas fa-arrows-alt fa-lg position-absolute text-white"></i>
+      </button>
+      <button class="panorama__control panorama__shareControl" aria-label="share">
+        <i aria-hidden="true" class="fas fa-share-alt fa-lg position-absolute text-white"></i>
+      </button>
+
+      <div class="shopDetails">
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="img/logo-white.png" alt="Brand logo" class="shopDetails__logo" width="150"> <!-- logo -->
+          <p class="shopDetails__location">
+            Floor Number 1
+          </p> <!-- location -->
+        </div>
+        <h2 class="shopDetails__name">
+          Microsoft Entrance
+        </h2> <!-- place in the 360 -->
+        <p class="shopDetails__workingHours text-green">
+          open <time datetime="12:30">12:30PM</time> - closed <time datetime="00:30">12:30AM</time>
+        </p> <!-- working hours -->
+        <h3 class="shopDetails__toolsTitle">Shop Tools</h3>
+        <ul class="list shopToolList">
+          <li class="text-center">
+            <button class="shopToolList__tool">
+                <i aria-hidden="true" class="fas fa-search fa-lg position-absolute text-white"></i>
+            </button>
+            Search
+          </li>
+          <li class="text-center">
+            <button class="shopToolList__tool">
+                <i aria-hidden="true" class="fas fa-dice-six fa-lg position-absolute text-white"></i>
+            </button>
+            Sections
+          </li>
+          <li class="text-center">
+            <button class="shopToolList__tool">
+                <i aria-hidden="true" class="far fa-building fa-lg position-absolute text-white"></i>
+            </button>
+            Floor
+          </li>
+        </ul>
+      </div> <!-- shop details -->
+    </div> <!-- container -->
+  </section> <!-- 360 view -->
+
+  <!-- best products section -->
+  <section class="bestProducts pt-4 pb-5">
+    <div class="container">
+      <header class="row justify-content-between align-items-center mb-5">
+        <div class="col-lg-auto mb-4 mb-lg-0">
+          <h2 class="title-2 mb-1">Best Products</h2>
+          <p class="font-weight-md text-dark-grey mb-0">Learn about all categories</p>
+        </div><!-- heading -->
+
+        <div class="col-lg-auto justify-content-end">
+          <ul class="list categoryList text-center">
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">Mac</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">iPhone</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">iPad</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">Accessories</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">Laptops</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">All</a>
+            </li>
+          </ul>
+        </div><!-- category list -->
+      </header><!-- row -->
+
+      <ul class="list row prodcutList">
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-1.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-2.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-3.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-4.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-5.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-6.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-7.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-8.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-9.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-10.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-11.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-12.png" alt="">
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+      </ul><!-- product grid -->
+
+      <div class="text-center">
+        <button class="btn text-white bg-green py-2 px-4">
+          View More
+        </button>
+      </div>
+    </div><!-- container -->
+  </section><!-- best products section -->
+
+  <!-- Ads section -->
+  <section class="ads py-5 inner-top-shadow">
+    <div class="container">
+      <h2 class="sr-only">Ads</h2>
+      <ul class="list row">
+        <li class="col-lg-6 ad mb-4 mb-lg-0">
+          <div class="adContainer">
+            <div class="row align-items-center">
+              <div class="ad__imgContainer col-sm-6 mb-3 mb-sm-0">
+                <img src="img/tablet.png" alt="Laptop" class="ad__img">
+              </div><!-- col (ad image) -->
+              <div class="ad__text col-sm-6">
+                <p class="ad__paragraph">
+                  Save up to 70% off
+                </p>
+                <div class="ad__prices">
+                  <span class="ad__newPrice">2500$</span>
+                  <s class="ad__oldPrice text-white">3500$</s>
+                </div>
+                <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+              </div><!-- col (ad text) -->
+            </div><!-- nested row -->
+          </div><!-- ad container -->
+        </li><!-- col (ad item) -->
+
+        <li class="col-lg-6 ad">
+          <div class="adContainer">
+            <div class="row align-items-center">
+              <div class="ad__imgContainer col-sm-6 mb-3 mb-sm-0">
+                <img src="img/mouse.png" alt="Laptop" class="ad__img">
+              </div><!-- col (ad image) -->
+              <div class="ad__text col-sm-6">
+                <p class="ad__paragraph">
+                  Save up to 70% off
+                </p>
+                <div class="ad__prices">
+                  <span class="ad__newPrice">2500$</span>
+                  <s class="ad__oldPrice text-white">3500$</s>
+                </div>
+                <a href="#" class="font-weight-md d-inline-block link link_color_inherited px-3 py-2 bg-white mt-2 mb-4">View Products</a>
+              </div><!-- col (ad text) -->
+            </div><!-- nested row -->
+          </div><!--ad container-->
+        </li><!-- col (ad item) -->
+      </ul><!-- row (ad list) -->
+    </div>
+  </section><!-- Ads section -->
+
+  <!-- best deals section -->
+  <section class="bestDeals pt-4 pb-5">
+    <div class="container">
+      <header class="row justify-content-between align-items-center mb-5">
+        <div class="col-lg-auto mb-4 mb-lg-0">
+          <h2 class="title-2 mb-1">Best Deals</h2>
+          <p class="font-weight-md text-dark-grey mb-0">Learn about all categories</p>
+        </div><!-- heading -->
+
+        <div class="col-lg-auto justify-content-end">
+          <ul class="list categoryList text-center">
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">Mac</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">iPhone</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">iPad</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">Accessories</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">Laptops</a>
+            </li>
+            <li class="categoryList__item">
+              <a href="#" class="categoryList__link">All</a>
+            </li>
+          </ul>
+        </div><!-- category list -->
+      </header><!-- row -->
+
+      <ul class="list row prodcutList">
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-1.png" alt="">
+            <span class="product__saleBadge">70%<br>sale</span>
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-2.png" alt="">
+            <span class="product__saleBadge">25%<br>sale</span>
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-3.png" alt="">
+            <span class="product__saleBadge">50%<br>sale</span>
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+        <li class="product col-sm-6 col-md-4 col-lg-3">
+          <div class="productContainer text-center">
+            <img class="product__image" src="img/product-4.png" alt="">
+            <span class="product__saleBadge">60%<br>sale</span>
+            <h3 class="product__name title-3 mt-3">Surface 6 MicroSoft</h3>
+            <div class="mb-3">
+              <s class="oldPrice product__oldPrice">3625$</s>
+              <span class="newPrice product__newPrice">2500$</span>
+            </div>
+            <button class="btn text-white bg-blue w-100">
+              <i class="text-white fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              Add to cart
+            </button>
+          </div>
+        </li><!-- product -->
+      </ul><!-- product grid -->
+    </div><!-- container -->
+  </section><!-- best deals section -->
+
+  <!-- contact section -->
+  <section class="contact pt-5 pb-4 inner-top-shadow">
+    <h2 class="sr-only">Contact Us</h2>
+    <div class="container">
+      <p class="contact__paragraph mb-4">
+        Join to our newsletter
+      </p>
+      <div class="row align-items-center">
+        <form class="col-md mb-3 mb-md-0 position-relative">
+          <div class="input-group contact__inputGroup">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="email" class="contact__input form-control" placeholder="Enter Your E-mail" aria-label="email">
+          </div>
+          <button type="submit" class="btn contactForm__btn text-white bg-blue">subscribe</button>
+        </form><!-- col -->
+
+        <div class="col-md-auto">
+          <ul class="list socialList d-flex">
+            <li class="socialItem vimeo mr-3">
+              <a href="#" class="socialItem__link" aria-label="vimeo">
+                <i class="fab fa-vimeo-v text-white m-auto" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="socialItem twitter mr-3">
+              <a href="#" class="socialItem__link" aria-label="twitter">
+                <i class="fab fa-twitter text-white m-auto" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="socialItem facebook">
+              <a href="#" class="socialItem__link" aria-label="facebook">
+                <i class="fab fa-facebook-f text-white m-auto" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- row -->
+      <img class="my-5" src="img/logo.png" alt="Logo" width="135">
+      <nav class="secondaryNav">
+        <h3 class="sr-only">Secondary Navbar</h3>
+        <ul class="list row">
+          <li class="col-6 col-sm-4 col-md-2 mb-4">
+            <ul class="list">
+              <li><a class="secondaryNav__link" href="#">Lighting</a></li>
+              <li><a class="secondaryNav__link" href="#">Plugs</a></li>
+              <li><a class="secondaryNav__link" href="#">Cameras</a></li>
+              <li><a class="secondaryNav__link" href="#">Door Locks</a></li>
+              <li><a class="secondaryNav__link" href="#">Thermostats</a></li>
+              <li><a class="secondaryNav__link" href="#">TV & Video</a></li>
+            </ul>
+          </li>
+          <li class="col-6 col-sm-4 col-md-2 mb-4">
+            <ul class="list">
+              <li><a class="secondaryNav__link" href="#">Lighting</a></li>
+              <li><a class="secondaryNav__link" href="#">Plugs</a></li>
+              <li><a class="secondaryNav__link" href="#">Cameras</a></li>
+              <li><a class="secondaryNav__link" href="#">Door Locks</a></li>
+              <li><a class="secondaryNav__link" href="#">Thermostats</a></li>
+              <li><a class="secondaryNav__link" href="#">TV & Video</a></li>
+            </ul>
+          </li>
+          <li class="col-6 col-sm-4 col-md-2 mb-4">
+            <ul class="list">
+              <li><a class="secondaryNav__link" href="#">Lighting</a></li>
+              <li><a class="secondaryNav__link" href="#">Plugs</a></li>
+              <li><a class="secondaryNav__link" href="#">Cameras</a></li>
+              <li><a class="secondaryNav__link" href="#">Door Locks</a></li>
+              <li><a class="secondaryNav__link" href="#">Thermostats</a></li>
+              <li><a class="secondaryNav__link" href="#">TV & Video</a></li>
+            </ul>
+          </li>
+          <li class="col-6 col-sm-4 col-md-2 mb-4">
+            <ul class="list">
+              <li><a class="secondaryNav__link" href="#">Lighting</a></li>
+              <li><a class="secondaryNav__link" href="#">Plugs</a></li>
+              <li><a class="secondaryNav__link" href="#">Cameras</a></li>
+              <li><a class="secondaryNav__link" href="#">Door Locks</a></li>
+              <li><a class="secondaryNav__link" href="#">Thermostats</a></li>
+              <li><a class="secondaryNav__link" href="#">TV & Video</a></li>
+            </ul>
+          </li>
+          <li class="col-6 col-sm-4 col-md-2 mb-4">
+            <ul class="list">
+              <li><a class="secondaryNav__link" href="#">Lighting</a></li>
+              <li><a class="secondaryNav__link" href="#">Plugs</a></li>
+              <li><a class="secondaryNav__link" href="#">Cameras</a></li>
+              <li><a class="secondaryNav__link" href="#">Door Locks</a></li>
+              <li><a class="secondaryNav__link" href="#">Thermostats</a></li>
+              <li><a class="secondaryNav__link" href="#">TV & Video</a></li>
+            </ul>
+          </li>
+          <li class="col-6 col-sm-4 col-md-2 mb-4">
+            <ul class="list">
+              <li><a class="secondaryNav__link" href="#">Lighting</a></li>
+              <li><a class="secondaryNav__link" href="#">Plugs</a></li>
+              <li><a class="secondaryNav__link" href="#">Cameras</a></li>
+              <li><a class="secondaryNav__link" href="#">Door Locks</a></li>
+              <li><a class="secondaryNav__link" href="#">Thermostats</a></li>
+              <li><a class="secondaryNav__link" href="#">TV & Video</a></li>
+            </ul>
+          </li>
+        </ul><!-- row -->
+      </nav>
+    </div><!-- container -->
+  </section><!-- contact section -->
+
+  <!-- footer -->
+  <footer class="py-4 inner-top-shadow">
+    <div class="container d-flex flex-column flex-sm-row text-center justify-content-between">
+      <p class="mb-3 mb-sm-0"><small class="footer__small">
+        &copy; Copyright 2019 All Rights Reserved
+      </small></p>
+
+      <p class="mb-0 d-flex align-items-center justify-content-center"><small class="footer__small">
+        Powered by <img class="ml-2" src="img/nasorg-logo.png" alt="NasOrg logo" width="75">
+      </small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

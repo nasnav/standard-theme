@@ -1,0 +1,83 @@
+@import '../modules/colors';
+@import '../modules/breakpoints';
+
+/* header row */
+.categorySection__header {
+  .col {
+    @media screen and (max-width: $break-categories-header) {
+      width: 100%;
+    }
+
+    &:first-child {
+      @media screen and (max-width: $break-categories-header) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+/* ===================================
+Caregory
+====================================== */
+.categoryGrid {
+  position: relative;
+
+  &:nth-of-type(2) {
+    .categoryContainer {
+      &:nth-child(3) {
+        @media screen and (min-width: $break-xl) {
+          order: -1;
+        }
+      }
+      &:nth-child(4) {
+        @media screen and (min-width: $break-l) {
+          left: 46.3rem;
+        }
+      }
+    }
+  }
+}
+
+.category {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $break-l) {
+    height: 24rem;
+  }
+}
+
+.category-2,
+.category-4 {
+  @media screen and (min-width: $break-xl) {
+    height: 11rem;
+    flex-direction: row;
+
+    .category__text,
+    .category__imageContainer {
+      width: 50%;
+    }
+  }
+}
+
+.categoryContainer:nth-child(4) {
+  @media screen and (min-width: $break-xl) {
+    position: absolute;
+    bottom: 0; left: 17.3rem; 
+  }
+}
+
+/* image */
+.category__imageContainer {
+  margin: auto;
+  @media screen and (max-width: $break-s) {
+    max-width: 15rem;
+  }
+}
+
+.category__image {
+  max-width: 100%;
+}

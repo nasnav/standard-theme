@@ -1,0 +1,86 @@
+@import '../modules/colors';
+
+.signupForm {
+  background-color: #fff;
+  padding: 1.2rem 1.8rem;
+  border-radius: .25rem;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+/* title */
+.signupForm__title {
+  font-size: 1.6rem;
+}
+
+/* addons */
+.signupForm__addon {
+  background-color: transparent;
+  border-right: none; 
+}
+
+.signupForm__fa {
+  color: $input-icons;
+}
+
+/* input */
+.signupForm__input {
+  height: 3rem;
+  border-left: none;
+}
+
+/* checkbox */
+.signupForm__checkboxContainer {
+  margin: .5rem 0;
+  position: relative;
+  padding-left: 2.2rem;
+}
+
+.signupForm__checkbox {
+  &:checked ~ .signupForm__checkboxLabel .checkmark::after {
+    display: block;
+  }
+
+  &:focus ~ .signupForm__checkboxLabel .checkmark {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+}
+
+/* checkmark */
+.checkmark {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 1px solid #ced4da;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+  &::after {
+    content: '';
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    background-color: $checkmark;
+    position: absolute;
+    display: none;
+  }
+}
+
+/* buttons */
+.signupForm__btn {
+  min-width: 15.7rem;
+}
+
+/* shield image */
+.signupForm__sheild {
+  width: 100%;
+  max-width: 9rem;
+}

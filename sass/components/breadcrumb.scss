@@ -1,0 +1,11 @@
+@import '../modules/mixins';
+@import '../modules/colors';
+
+.breadcrumbBar {
+  background-color: $bg-lighter-grey;
+}
+
+/* links */
+.breadcrumb__link {
+  color: inherit;
+}
